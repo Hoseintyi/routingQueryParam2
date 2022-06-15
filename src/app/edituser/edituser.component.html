@@ -1,0 +1,8 @@
+<p class="m-4">EDIT NAME:</p> 
+
+<input #name type="text"  class="m-4" [value]="user?.name" [disabled]="!editName">  
+
+
+<button class="btn btn-outline-success" (click)="onChangeName(name?.value)"> Submit Edit </button>
+
+

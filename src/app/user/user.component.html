@@ -1,0 +1,8 @@
+<div *ngIf="!editMode">
+    <h1 class="m-3"> {{user?.name}} </h1>
+    <button class="btn btn-warning m-3" (click)="openEditUser()" > Edit User </button>
+</div>
+
+<div *ngIf="editMode">
+    <router-outlet></router-outlet>
+</div>
